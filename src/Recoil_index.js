@@ -47,6 +47,24 @@ const {RecoilRoot} = require('./components/Recoil_RecoilRoot.react');
 const {isRecoilValue} = require('./core/Recoil_RecoilValue');
 const selector = require('./recoil_values/Recoil_selector');
 
+const {
+  // Convenience RecoilValues
+  atomFamily,
+  selectorFamily,
+  constSelector,
+  errorSelector,
+  readOnlySelector,
+
+  // Concurrency Helpers
+  noWait,
+  waitForNone,
+  waitForAny,
+  waitForAll,
+
+  // Components
+  Link_UNSTABLE,
+} = require('./RecoilUtils');
+
 module.exports = {
   // Types
   DefaultValue,
@@ -76,4 +94,21 @@ module.exports = {
 
   // Other functions
   isRecoilValue,
+
+  //Utils
+  // Convenience RecoilValues
+  atomFamily,
+  selectorFamily,
+  constSelector,
+  errorSelector,
+  readOnlySelector,
+
+  // Concurrency Helpers
+  noWait,
+  waitForNone,
+  waitForAny,
+  waitForAll,
+
+  // Components
+  Link_UNSTABLE,
 };
